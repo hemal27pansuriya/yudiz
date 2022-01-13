@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* .container {
+    max-width: 1200px;
+    padding: 0.01em 16px; 
+} */
+.navbar {
+    background-color: #333;
+}
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 76px;
+    padding-right: 120px;
+}
+.logo {
+    margin-right: 543px;
+    padding-top: 12px;
+}
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600 ;
+}
+.first {
+    width: 100%;
+    height: 565px;
+    background-image: url(./images/banner.jpg);
+    background-size: cover;
+}
+.heading {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    padding-top: 200px;
+    padding-left: 200px;
+    color: white;
+    font-size: 35px;
+    width: 60%;
+    text-shadow: 0 1px 1px black;
+}
+.getstarted {
+    padding: 12px 20px;
+    margin-left: 202px;
+    margin-top: 35px;
+    border: 2px solid white;
+    background: none;
+    color: white;
+    font-weight: 600;
+    text-shadow: 0 0px 1px white;
+}
+.getstarted:hover {
+    background-color: rgba(147, 155, 155, 0.5);
+}
+.second {
+    padding: 90px;
+    width: 73%;
+    margin-left: 115px;
+}
+.second h1 {
+    color: #e5474b;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin-bottom: 27px;
+}
+.second p {
+    letter-spacing: 1px;
+    line-height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 30px;
+}
+.learnMore {
+    padding: 12px 20px;
+    border: 2px solid #e5474b;
+    background: none;
+    color: #e5474b;
+    font-weight: 600;
+    text-shadow: 0 0px 1px #e5474b;
+}
+.learnMore:hover {
+    background-color: rgba(241, 177, 177, 0.3);
+}
+.third {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    justify-content: center;
+}
+.palle {
+    background-color: rgba(218, 218, 218, 0.4);
+    width: 50%;
+    padding: 100px 0 100px 204px;
+}
+.morbi {
+    background-color: rgba(243, 245, 231, 0.904);
+    width: 50%;
+    padding: 100px 81px 100px 90px;
+}
+.palle h2, .morbi h2 {
+    color: #e5474b;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.palleimage {
+    background-image: url(./images/pic01.jpg);
+    width: 400px;
+    height: 185px;
+    margin: 24px 0px 33px;
+}
+.morbiimage {
+    width: 400px;
+    height: 185px;
+    background-image: url(./images/pic02.jpg);
+    margin: 24px 0px 33px;
+}
+.palle p, .morbi p {
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+.fourth {
+    max-width: 100%;
+    height: 350px;
+    display: flex;
+    padding: 100px 200px;
+}
+.laptop1 h2, p, .diamond h2, p, .laptop2 h2, p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.laptop2, .laptop1, .diamond {
+    width: 33%;
+    height: 335px;
+}
+.laptop1 h2, .diamond h2, .laptop2 h2 {
+    padding: 20px 0;
+    color: #e5474b;
+}
+.laptop1 p, .diamond p, .laptop2 p {
+    line-height: 30px;
+    letter-spacing: 1px;
+    line-break: auto;
+    max-width: 200px;
+    margin-bottom: 28px;
+}
+.laptop1 {
+    margin-right: 95px;
+}
+.diamond {
+    margin-left: 60px;
+}
+.laptop2 {
+    margin-left: 146px;
+}
+p {
+    color: rgb(136, 138, 139);
+}
+footer {
+    background-color: #e5474b;
+    height: 520px;
+    padding: 50px 200px;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: Arial, Helvetica, sans-serif;
+}
+footer > h1 {
+    font-size: 27px;
+    padding-bottom: 25px;
+}
+.name, .email, .msg {
+    font-size: 12px;
+}
+#email {
+    width: calc(50% - 10px);
+}
+#name {
+    margin-right: 29px;
+    width: calc(50% - 28px);
+}
+.name {
+    margin-right: 440px;
+}
+#name, #email, #msg {
+    background: none;
+    height: 30px;
+    border: 1px solid rgba(211, 209, 209, 0.9);
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+#msg {
+    height: 180px;
+    width: 100%;
+}
+.sendmsg {
+    padding: 12px 20px;
+    border: 1px solid rgba(211, 209, 209, 0.9);
+    background: none;
+    color: rgba(211, 209, 209, 0.9);
+    font-weight: 600;
+    text-shadow: 0 0px 1px #e5474b;
+}
+.sendmsg:hover {
+    background-color: rgba(211, 209, 209, 0.3);
+    outline: 6px solid #e73137;
+}
+footer > p {
+    font-size: small;
+    color: rgba(190, 186, 186, 0.9);
+    padding-top: 30px;
+}
