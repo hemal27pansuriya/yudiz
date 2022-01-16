@@ -660,3 +660,13 @@
 // console.log(check(15, 20))
 // console.log(check(6, 9))
 // console.log(check(6, 5))
+
+// Exercise - 46
+function multiple(a,b){
+    return ((a%7==0 && b%7!=0) || (a%7!=0 && b%7==0)) || ((a%11==0 && b%11!=0)||(a%11!=0&&b%11==0))
+}
+
+console.log(multiple(49,52))
+console.log(multiple(35,56))
+console.log(multiple(44,52))
+console.log(multiple(55,88))
