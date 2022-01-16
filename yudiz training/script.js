@@ -38,7 +38,7 @@
 // arr.forEach(function(item) {
 //     console.log(item.age);
 // })
-    
+
 // // map - does return new array of same size using values of original
 // const arr = [
 //     {name : "john", age : 20, field : "web"},
@@ -586,3 +586,77 @@
 // console.log(check(10, 8))
 // console.log(check(14, 20))
 // console.log(check(6, 2))
+
+// Exercise - 41
+// function check(x, y, z){
+//     if(x==y && y==z && x==z){
+//         return 30
+//     }else if(x==y || y==z || x==z){
+//         return 40
+//     }else{
+//         return 20
+//     }
+// }
+
+// console.log(check(2,2,2))
+// console.log(check(21,12,82))
+// console.log(check(22,22,22))
+// console.log(check(2,2,21))
+
+// Exercise - 42
+// function checkMode(x,y,z){
+//     if(x<y && y<z){
+//         return "Strict Mode";
+//     }else if(x>=y && y<z){
+//         return "Soft Mode";
+//     }
+// }
+
+// console.log(checkMode(10,20,22))
+// console.log(checkMode(21,20,22))
+// console.log(checkMode(20,20,22))
+// console.log(checkMode(11,20,22))
+
+// Exercise - 43
+// function digit(a, b, c) {
+//     if (a > 0 && b > 0 && c > 0) {
+//         if(a % 10 == b % 10 || a % 10 == c % 10 || b % 10 == c % 10){
+//             return true
+//         }else{
+//             return false
+//         }
+//     }else{
+//         return "negative number"
+//     }
+// }
+
+// console.log(digit(10, 20, 30))
+// console.log(digit(10, 20, 31))
+// console.log(digit(10, 24, 35))
+// console.log(digit(14, 24, -34))
+
+// Exercise - 44
+// function condition(a,b,c){
+//     return (a>=20 && (a<b || a<c))||(b>=20 && (b<a || b<c))||(c>=20 && (c<a || b>c))  
+// }
+
+// console.log(condition(25,45,20));
+// console.log(condition(15,15,20));
+// console.log(condition(25,15,20));
+// console.log(condition(20,45,20));
+
+// Exercise - 45
+// function check(a, b){
+//     if(a == 15 || b == 15 || a+b == 15 || Math.abs(a-b) == 15){
+//         return true
+//     }
+//     else{
+//         return false
+//     }
+// }
+
+// console.log(check(14, 29))
+// console.log(check(10, 15))
+// console.log(check(15, 20))
+// console.log(check(6, 9))
+// console.log(check(6, 5))
