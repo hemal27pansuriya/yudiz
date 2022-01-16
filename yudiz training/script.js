@@ -495,3 +495,94 @@
 // console.log(range(45,55))
 // console.log(range(45,50))
 // console.log(range(12,25))
+
+// Exercise - 35
+// function character(str, char) {
+//     let yes = false;
+//     for(let i = 2; i < 5; i++){
+//         if (str[i] == char){
+//             yes = true;
+//             break;
+//         }
+//     }
+//     return yes;
+// }
+
+// console.log(character("javascript", 'a'));
+// console.log(character("javascript", 's'));
+// console.log(character("javascript", 'c'));
+// console.log(character("javascript", 'v'));
+// console.log(character("javascript", 't'));
+
+// Exercise - 36
+// function threeInt (int1, int2, int3){
+//     const int1r = int1 % 10;
+//     const int2r = int2 % 10;
+//     const int3r = int3 % 10;
+//     if (int1r == int2r && int2r == int3r && int1r == int3r){
+//         return true
+//     }else{
+//         return false
+//     }
+// }
+// console.log(threeInt(125, 255, 365));
+// console.log(threeInt(125, 254, 368));
+// console.log(threeInt(120, 250, 360));
+// console.log(threeInt(121, 258, 360));
+
+// Exercise - 37
+// function string(str){
+//     if(str.length >= 3){
+//         const str1 = str.slice(0,3).toLowerCase();
+//         const str2 = str.slice(3).toUpperCase();
+//         return str1 + str2;
+//     }else{
+//         return str.toUpperCase();
+//     }
+// }
+
+// console.log(string("Javascript"));
+// console.log(string("python"));
+// console.log(string("Hi"));
+
+// Exercise - 38
+// function result(marks, exam) {
+//     if(exam == "final exam"){
+//         return (marks >= 90);
+//     }else{
+//         return (marks >= 89) && (marks <= 100)
+//     }
+// }
+
+// console.log(result(85, "final exam"));
+// console.log(result(85, ""));
+// console.log(result(92, "final exam"));
+// console.log(result(95, ""));
+
+// Exercise - 39
+// function sum(a, b) {
+//     if(a+b >= 50 && a+b <= 80){
+//         return 65;
+//     }else{
+//         return 80;
+//     }
+// }
+// console.log(sum(15, 52))
+// console.log(sum(25, 36))
+// console.log(sum(15, 25))
+// console.log(sum(15, 20))
+
+// Exercise - 40
+// function check(a, b){
+//     if(a == 8 || b == 8 || a+b == 8 || Math.abs(a-b) == 8){
+//         return true
+//     }
+//     else{
+//         return false
+//     }
+// }
+
+// console.log(check(14, 22))
+// console.log(check(10, 8))
+// console.log(check(14, 20))
+// console.log(check(6, 2))
