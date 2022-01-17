@@ -662,11 +662,52 @@
 // console.log(check(6, 5))
 
 // Exercise - 46
-function multiple(a,b){
-    return ((a%7==0 && b%7!=0) || (a%7!=0 && b%7==0)) || ((a%11==0 && b%11!=0)||(a%11!=0&&b%11==0))
-}
+// function multiple(a,b){
+//     return ((a%7==0 && b%7!=0) || (a%7!=0 && b%7==0)) || ((a%11==0 && b%11!=0)||(a%11!=0&&b%11==0))
+// }
 
-console.log(multiple(49,52))
-console.log(multiple(35,56))
-console.log(multiple(44,52))
-console.log(multiple(55,88))
+// console.log(multiple(49,52))
+// console.log(multiple(35,56))
+// console.log(multiple(44,52))
+// console.log(multiple(55,88))
+
+// Exercise - 47
+// function range(a,b,number){
+//     if(number>=40 && number<=10000){
+//         if(a<=number && number<=b){
+//             return true
+//         }else{
+//             return false
+//         }
+//     }
+//     else{
+//         return false
+//     }
+// }
+// console.log(range(40, 4000, 52));
+// console.log(range(50, 5000, 45));
+// console.log(range(60, 400, 80));
+
+// Exercise - 48
+// function reverse(str){
+//     return str.split("").reverse().join('');
+// }
+
+// console.log(reverse("javascript"));
+// console.log(reverse("python"));
+// console.log(reverse("hemal"));
+
+// Exercise - 49
+
+// Exercise - 50
+// function capitalize(str){
+//     let string = str.split(" ");
+//     for (let i = 0; i < string.length; i++){
+//         string[i] = string[i][0].toUpperCase() + string[i].slice(1);
+//     }
+//     return string.join(" ")
+// }
+
+// console.log(capitalize("this is best"));
+// console.log(capitalize("i am twenty one years old"));
+// console.log(capitalize("i am from nava vaghaniya"));
