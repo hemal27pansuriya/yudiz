@@ -711,3 +711,71 @@
 // console.log(capitalize("this is best"));
 // console.log(capitalize("i am twenty one years old"));
 // console.log(capitalize("i am from nava vaghaniya"));
+
+// Exercise - 51
+// function toHoursMins(num){
+//     const hours = Math.floor(num/60);
+//     const mins = num%60;
+//     return `Hours : ${hours}, Minutes : ${mins}`;
+// }
+// console.log(toHoursMins(200))
+// console.log(toHoursMins(368))
+// console.log(toHoursMins(450))
+
+// Exercise - 52
+// function sorting(str){
+//     str = str.split("");
+//     str.sort();
+//     return str.join("");
+// }
+
+// console.log(sorting("Javascript"))
+// console.log(sorting("vaghaniya"))
+// console.log(sorting("react"))
+
+// Exercise - 53
+// function ac_check(str, a, b){
+//     const x = str.indexOf(a);
+//     const y = str.indexOf(b);
+//     return Math.abs(y-x) == 4;
+// }
+
+// console.log(ac_check("Javascipt", "J", "s"));
+// console.log(ac_check("bharat", "h", "t"));
+// console.log(ac_check("Javascipt", "v", "i"));
+
+// Exercise - 54
+// function vowels(str){
+//     let count = 0
+//     for(let i=0; i<str.length; i++){
+//         if(str[i]=="a" || str[i]=="e" || str[i]=="i" || str[i]=="o" || str[i]=="u"){
+//             count += 1
+//         }
+//     }
+//     return count
+// }
+
+// console.log(vowels("javascript"))
+// console.log(vowels("react"))
+// console.log(vowels("node"))
+
+// Exercise - 55
+// function pnt(str){
+//     let p_count = 0;
+//     let t_count = 0;
+//     for(let i=0; i<str.length; i++){
+//         if(str[i]=="p"){
+//             p_count += 1
+//         }
+//     }
+//     for(let i=0; i<str.length; i++){
+//         if(str[i]=="t"){
+//             t_count += 1
+//         }
+//     }
+//     return p_count == t_count;
+// }
+
+// console.log(pnt("patpsd"))
+// console.log(pnt("patptsd"))
+// console.log(pnt("patpsptd"))

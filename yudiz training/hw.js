@@ -34,7 +34,7 @@ function drawTree(height) {
     // ... your code here
     for(let i = 1; i <= height; i++){
         for(let j = i; j <= height-1; j++){
-            a += "*";
+            a += "8";
         }
         for(let k = 1; k <= i*2-1; k++){
             a += String.fromCharCode(k+64);
