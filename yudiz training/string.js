@@ -7,6 +7,15 @@ PROBLEM - 1
 */
 function isIsogram(word) {
    // ... your code here.
+   word = word.toLowerCase();
+   for(let i = 0; i < word.length; i++){
+       for(let j = i+1; j < word.length; j++){
+           if(word[i] == word[j]){
+               return false
+           }
+       }
+   }
+   return true;
 }
 
 console.log(isIsogram("Algorism"));      // true
@@ -15,7 +24,8 @@ console.log(isIsogram("Consecutive"));   // false
 
 /*
 PROBLEM - 2
-    Parity bits are used as very simple checksum to ensure that binary data isn't corrupted during transit. Here's how they work:
+    Parity bits are used as very simple checksum to ensure that binary 
+    data isn't corrupted during transit. Here's how they work:
 
     If a binary string has an odd number of 1's, the parity bit is a 1.
     If a binary string has an even number of 1's, the parity bit is a 0.
@@ -34,10 +44,22 @@ PROBLEM - 2
         Return true.
 
 */
-function validateBinary(bits) {
+
+function validateBinary(bits){
     // ... your code here.
+    count_1 = 0;
+    for(let i = 0; i < bits.length; i++){
+        if(bits[i] == "1"){
+            count_1 += 1;
+        }
+    }
+    if(count_1 % 2 != 0){
+        return false;
+    }else{
+        return true;
+    }
 }
-console.log(validateBinary("00101101")) // true
+console.log(validateBinary("00101110")) // true
 console.log(validateBinary("11000000")) // true
 console.log(validateBinary("11000001")) // false
 
@@ -60,7 +82,19 @@ PROBLEM - 3
 
 function happinessNumber(smilies) {
     // ... your code here.
-}
+    let count = 0;
+    for(let i = 0; i < smilies.length-1; i++){
+        let str = smilies.slice(i, i+2);
+        if(str == ":)" || str == "(:"){
+            count += 1;
+        }
+        else if(str == ":(" || str == "):"){
+            count -= 1;
+        }
+    }
+    return count
+}   
+
 console.log(happinessNumber(":):(")) // -1
 console.log(happinessNumber("(:)"))  //  2
 console.log(happinessNumber("::::")) //  0

@@ -779,3 +779,23 @@
 // console.log(pnt("patpsd"))
 // console.log(pnt("patptsd"))
 // console.log(pnt("patpsptd"))
+
+// Exercise - 57
+// const repeat = (str, num) => {
+//     let string = "";
+//     for(let i = 0; i < num; i++){
+//         string += str;
+//     }
+//     return string;
+// }
+
+// console.log(repeat("js", 5));
+// console.log(repeat("heaven", 3));
+// console.log(repeat("yudiz", 4));
+
+// function repeat(str, num){
+//     return str.repeat(num);
+// }
+// console.log(repeat("js", 5));
+// console.log(repeat("heaven", 3));
+// console.log(repeat("yudiz", 4));
