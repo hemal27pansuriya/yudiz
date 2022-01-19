@@ -837,3 +837,85 @@
 // console.log(string("javascript"))
 // console.log(string("yudiz"))
 // console.log(string("hemal"))
+
+// Exercise - 61
+// function conc(str1, str2){
+//     return str1.slice(1) + str2.slice(1)
+// }
+
+// console.log(conc("java", "script"))
+// console.log(conc("nava", "vaghaniya"))
+// console.log(conc("hello", "javascript"))
+
+// Exercise - 62
+// function transfer(str){
+//     if(str.length >= 3){
+//         return str.slice(-3) + str.slice(0, -3);
+//     }else{
+//         return str;
+//     }
+// }
+
+// console.log(transfer("javascript"));
+// console.log(transfer("iskcon"));
+// console.log(transfer("hemal_pansuriya"));
+
+// Exercise - 63
+// function middle(str){
+//     let newStr;
+//     let temp = (str.length - 3)/2;
+//     if(str.length >= 3 && str.length % 2 == 1){
+//         newStr = str.slice(temp, str.length-temp);
+//         return newStr;
+//     }else{
+//         return str;
+//     }
+// }
+
+// console.log(middle("Hemal"));
+// console.log(middle("angular"));
+// console.log(middle("react"));
+// console.log(middle("javascript"));
+// console.log(middle("abcdefghijklmno"));
+
+// Exercise - 64
+// function conc(str1, str2){
+//     const diff = str1.length - str2.length;
+//     if(str1.length == str2.length){
+//         return str1 + str2;
+//     }else{
+//         if(diff > 0){
+//             return str1.slice(0, str1.length-diff) + str2;
+//         }else{
+//             return str1 + str2.slice(0, str2.length+diff);
+//         }
+//     }
+// }
+
+// console.log(conc("java", "plus"));
+// console.log(conc("java", "script"));
+// console.log(conc("react", "js"));
+
+///////or//////////or////////////or///////////or////////or//////////
+
+// function conc(str1, str2){
+//     const min = Math.min(str1.length, str2.length);
+//     return str1.slice(str1.length - min) + str2.slice(str2.length - min) 
+// }
+
+// console.log(conc("java", "plus"));
+// console.log(conc("java", "script"));
+// console.log(conc("react", "js"));
+
+// Exercise - 65
+// function checkScript(str){
+//     if(str.length >= 6 && str.slice(-6) == "Script"){
+//         return true;
+//     }else{
+//         return false;
+//     }
+// }
+
+// console.log(checkScript("JavaScript"))
+// console.log(checkScript("reactjs"))
+// console.log(checkScript("TypeScript"))
