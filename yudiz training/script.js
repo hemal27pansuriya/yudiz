@@ -799,3 +799,41 @@
 // console.log(repeat("js", 5));
 // console.log(repeat("heaven", 3));
 // console.log(repeat("yudiz", 4));
+
+// Exercise - 58
+// function string(str){
+//     const last3OfStr = str.slice(-3, );
+//     if(str.length >= 3){
+//         return last3OfStr.repeat(4);
+//     }else{
+//         return str;
+//     }
+// }
+
+// console.log(string("javascript"));
+// console.log(string("laptop"));
+// console.log(string("angular"));
+// console.log(string("hi"));
+
+// Exercise - 59
+// function firstHalf(str){
+//     if(str.length % 2 == 0){
+//         return str.slice(0, str.length/2);
+//     }else{
+//         return str;
+//     }
+// }
+
+// console.log(firstHalf("javascript"));
+// console.log(firstHalf("hemalp"));
+// console.log(firstHalf("vue"));
+
+// Exercise - 60
+// function string(str){
+//     const newStr = str.slice(1, -1);
+//     return newStr;
+// }
+
+// console.log(string("javascript"))
+// console.log(string("yudiz"))
+// console.log(string("hemal"))
