@@ -919,3 +919,65 @@
 // console.log(checkScript("JavaScript"))
 // console.log(checkScript("reactjs"))
 // console.log(checkScript("TypeScript"))
+
+// Exercise - 66
+// function cityName(city){
+//     if(city.length >= 3 && (city.slice(0,3) == "Los" || city.slice(0,3) == "New")){
+//         return city;
+//     }else{
+//         return "";
+//     }
+// }
+
+// console.log(cityName("New York"))
+// console.log(cityName("Ahmedabad"))
+// console.log(cityName("Los Angeles"))
+// console.log(cityName("hi"))
+
+// Exercise - 67
+// function PstrP(str){
+//     let start = 0;
+//     let end = str.length;
+//     if(str.charAt(0) == "P"){
+//         start += 1;
+//     }
+//     if(str.charAt(str.length-1) == "P"){
+//         end -= 1;
+//     }
+    
+//     return str.slice(start, end);
+// }
+
+// console.log(PstrP("Python"))
+// console.log(PstrP("javascript"))
+// console.log(PstrP("PHP"))
+
+// Exercise - 68
+// function firstLast(str, n){
+//     if(str.length >= n*2){
+//         return str.slice(0, n) + str.slice(-n);
+//     }else{
+//         return str
+//     }
+// }
+
+// console.log(firstLast("javascript", 2))
+// console.log(firstLast("javascript", 3))
+// console.log(firstLast("python", 2))
+
+// Exercise - 69
+// function arrSum(arr){
+//     return arr[0]+arr[1]+arr[2];
+// }
+
+// console.log(arrSum([20,30,50]))
+// console.log(arrSum([210,130,50]))
+// console.log(arrSum([2,13,5]))
+
+// Exercise - 70
+// function rotate(arr){
+//     return [arr[1], arr[2], arr[0]];
+// }
+
+// console.log(rotate([4,5,6]));
+// console.log(rotate([14,51,61]));
