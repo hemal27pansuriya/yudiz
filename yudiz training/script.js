@@ -981,3 +981,59 @@
 
 // console.log(rotate([4,5,6]));
 // console.log(rotate([14,51,61]));
+
+// Exercise - 71
+// function chechFirstLast(arr){
+//     if(arr.length >= 1){
+//         return arr[0] == 1 || arr[arr.length-1] == 1;
+//     }else{
+//         return false;
+//     }
+// }
+
+// console.log(chechFirstLast([1,2,3]))
+// console.log(chechFirstLast([1,2,1]))
+// console.log(chechFirstLast([12,2,11]))
+// console.log(chechFirstLast([3,2,1]))
+
+// Exercise - 72
+// function checkFirstLast(arr){
+//     if(arr.length >= 2){
+//         return arr[0] == arr[arr.length-1];
+//     }
+// }
+
+// console.log(checkFirstLast([1,2,3]));
+// console.log(checkFirstLast([32,2,32]));
+// console.log(checkFirstLast([1,2,1]));
+
+// Exercise - 73
+// function reverse(array){
+//     return array.map((element, index, arr) => arr[(arr.length-1)-index]);
+// }
+
+// console.log(reverse([1,2,3]));
+// console.log(reverse([12,22,32]));
+// console.log(reverse([10,20,30]));
+
+// Exercise - 74
+// function larger(arr){
+//     const large = Math.max(arr[0], arr[arr.length-1]);
+//     return arr.map((element, index, array) => array[index] = large);
+    
+// }
+// console.log(larger([1,2,3]));
+// console.log(larger([12,22,32]));
+// console.log(larger([10,20,30]));
+
+// Exercise - 75
+// function middleOf2(arr1, arr2){
+//     const array = [];
+//     array.push(arr1[1], arr2[1]);
+//     return array;
+// }
+
+
+// console.log(middleOf2([5, 4, 3], [1, 2, 3])); 
+// console.log(middleOf2([1, 0, -1], [3, 5, 32]));  
+// console.log(middleOf2([2, 3, 1], [3, 6, 8]));
