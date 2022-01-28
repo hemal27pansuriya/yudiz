@@ -123,6 +123,23 @@
 
 // console.log(total);
 
+// Example of reduce - get list of firstName whose age is less than 30
+// const users = [
+//     {firstName : "Hemal", lastName : "Pansuriya", age : 21},
+//     {firstName : "Virat", lastName : "Kohli", age : 33},
+//     {firstName : "Kapil", lastName : "Sharma", age : 40},
+//     {firstName : "Kushal", lastName : "Rajyaguru", age : 22}
+// ];
+
+// const output = users.reduce(function(acc, curr){
+//     if(curr.age < 30){
+//         acc.push(curr.firstName);
+//     }
+//     return acc;
+// }, []);
+
+// console.log(output);
+
 // const date = new Date('01/03/2022 15:15:52');
 // console.log(date);
 // const month = date.getMonth();
@@ -1009,7 +1026,7 @@
 
 // Exercise - 73
 // function reverse(array){
-//     return array.map((element, index, arr) => arr[(arr.length-1)-index]);
+//     return array.map((el, index, arr) => arr[(arr.length-1)-index]);
 // }
 
 // console.log(reverse([1,2,3]));
@@ -1019,8 +1036,9 @@
 // Exercise - 74
 // function larger(arr){
 //     const large = Math.max(arr[0], arr[arr.length-1]);
-//     return arr.map((element, index, array) => array[index] = large);
-    
+//     return arr.map(function(index){
+//         return arr[index] = large
+//     });
 // }
 // console.log(larger([1,2,3]));
 // console.log(larger([12,22,32]));
@@ -1037,3 +1055,55 @@
 // console.log(middleOf2([5, 4, 3], [1, 2, 3])); 
 // console.log(middleOf2([1, 0, -1], [3, 5, 32]));  
 // console.log(middleOf2([2, 3, 1], [3, 6, 8]));
+
+// Exercise - 76
+// function firstAndLast(arr){
+//     if(arr.length < 1) return false;
+
+//     const array = [];
+//     array.push(arr[0], arr[arr.length-1]);
+//     return array;
+// }
+
+// console.log(firstAndLast([1,2,3]));
+// console.log(firstAndLast([11,2,33]));
+// console.log(firstAndLast([10,2,30,52]));
+// console.log(firstAndLast([]));
+
+// Exercise - 77
+// function oneOrThree(arr){
+//     return (arr.includes(1) || arr.includes(3));
+// }
+
+// Using Arrow function 
+
+// let oneOrThree = (arr) => arr.includes(1) || arr.includes(3);
+
+// console.log(oneOrThree([1,2]));
+// console.log(oneOrThree([2,3]));
+// console.log(oneOrThree([10,11]));
+// console.log(oneOrThree([1,3]));
+
+// Exercise - 78
+// let not13 = (arr) => {
+//     if(arr.includes(1) || arr.includes(3)) return false;
+//     return true;
+// }
+
+
+// console.log(not13([12,2]));
+// console.log(not13([1,2]));
+// console.log(not13([2,2]));
+// console.log(not13([3,2]));
+
+// Exercise - 80
+// let swapFirstLast = (arr) => {
+//     [arr[0], arr[arr.length-1]] = [arr[arr.length-1], arr[0]];
+//     return arr;
+// }
+
+// console.log(swapFirstLast([1,2]));
+// console.log(swapFirstLast([1,2,34,66]));
+// console.log(swapFirstLast([41,2,90]));
+
+// Exercise - 81
