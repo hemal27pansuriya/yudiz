@@ -79,3 +79,46 @@ makeOrder1(2000, ()=>console.log("Order is Placed."))
 */
 
 // Async-Await
+const is_shop_open = false;
+
+function time(time){
+    return new Promise((resolve, reject) => {
+        if(is_shop_open){
+            setTimeout(() => {
+                resolve();
+            }, time);
+        }
+        else{
+            reject(console.log("Shop is closed"));
+        }
+    })
+}
+
+async function makeOrder2(){
+    try{
+        await time(2000);
+        console.log(`Order is placed, you have choosed ${stocks.Fruits[3]} flavour.`);
+        await time(0000);
+        console.log("Production has started");
+        await time(2000);
+        console.log("Fruits cutting is done");
+        await time(1000);
+        console.log(`${stocks.liquid[0]} and ${stocks.liquid[1]} are added.`);
+        await time(1000);
+        console.log("Machine has been started");
+        await time(2000);
+        console.log(`Ice-cream is placing on ${stocks.holder[2]}`);
+        await time(3000);
+        console.log(`${stocks.toppings[0]} are decorated on the Ice-cream`);
+        await time(2000);
+        console.log("Order is served");
+    }
+    catch(error){
+        console.log(error)
+    }
+    finally{
+        console.log("Have a Good Night!")
+    }
+}
+
+makeOrder2();
