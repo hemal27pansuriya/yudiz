@@ -1107,3 +1107,18 @@
 // console.log(swapFirstLast([41,2,90]));
 
 // Exercise - 81
+// function addDigits(num){
+//     return num % 10 + Math.floor(num / 10);
+// }
+
+// console.log(addDigits(25))
+// console.log(addDigits(96))
+// console.log(addDigits(85))
+
+// Exercise - 82
+// function addWoutCarry(a, b){
+    
+// }
+
+// console.log(addWoutCarry(758, 128))
+// console.log(addWoutCarry(521, 128))
